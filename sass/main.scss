@@ -1,0 +1,35 @@
+@import "./section/header";
+@import "./section/carousel";
+@import "./section/discorver";
+@import "./section/services";
+@import "./section/experience";
+@import "./section/products";
+@import "./section/footerCarousel";
+@import "./section/footer";
+@import "./variables/variables";
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 10px;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+// 
+.body__container{
+    width: $width;
+    height: $height;
+    position: relative;
+    background: var(--background);
+    transition: all .8s ease;
+}

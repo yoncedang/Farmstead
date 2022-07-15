@@ -1,0 +1,31 @@
+$small : "only screen and (min-width: 576px) and (max-width: 767px)";
+
+$medium: "only screen and (min-width: 768px) and (max-width: 991px)";
+
+$megasmall: "only screen and (min-width: 480px) and (max-width: 575px)";
+
+// $content: "only screen and (min-width: 375px) and (max-width: 540px)";
+
+@mixin small() {
+    @media #{$small} {
+        @content;
+    }
+}
+
+@mixin medium() {
+    @media #{$medium} {
+        @content;
+    }
+}
+
+@mixin megasmall() {
+    @media #{$megasmall} {
+        @content;
+    }
+}
+
+// @mixin content() {
+//     @media #{$content} {
+//         @content;
+//     }
+// }

@@ -1,0 +1,66 @@
+$width: 100%;
+$height: $width;
+
+
+$orange: #fb811e;
+$bluetree: #009f4d;
+
+$black: #000;
+$white: #fff;
+
+$bgblack: #222222;
+
+$text: #707070;
+$social: rgba(224, 201, 69, 0.3);
+
+$platform: #009f4d;
+
+$grayS: #f4f4f4;
+$greyS: #0b0d0e;
+
+$form: #f4f4f4;
+
+:root {
+    --orangeHover: #{$black};
+    --background: #{$white};
+
+    --orange: #{$orange};
+    --black: #{$black};
+    --white: #{$white};
+
+    --text: #{$text};
+    --bluetree: #{$bluetree};
+    --social: #{$social};
+
+
+    --grayS: #{$grayS};
+
+}
+
+
+.dark__mode{
+    --orangeHover: #{$white};
+    --background: #{$bgblack};
+
+    --orange: #{$orange};
+    --black: #{$white};
+    --white: #{$black};
+
+    --text: #{$text};
+    --bluetree: #{$bluetree};
+    --social: #{$social};
+
+
+    --grayS: #{$greyS};
+}
+
+
+
+
+// Hover @Mixin
+@mixin hoverOrange {
+    color: var(--orangeHover);
+    a{
+        color: var(--orangeHover);
+    }
+}
