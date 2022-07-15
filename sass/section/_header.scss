@@ -1,0 +1,274 @@
+@import "./../responsive/responsive";
+@import "./../variables/variables";
+
+
+
+.header__container {
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .3s ease;
+    width: 100%;
+
+    &.active {
+        background: var(--background);
+        height: 7rem;
+
+        .navbar__container {
+            .navbar__left {
+                color: var(--black);
+
+                a {
+                    color: var(--black);
+                }
+
+            }
+
+            .navbar__right {
+                .navbar__menu {
+                    .menu__button {
+                        i {
+                            color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .navbar__container {
+        padding: 0 1rem;
+        align-items: center;
+
+        .navbar__left {
+            position: relative;
+            color: var(--orange);
+            transition: all .5s ease;
+
+            i {
+                position: absolute;
+                left: 29%;
+                font-size: 2rem;
+                top: .2rem;
+            }
+
+            a {
+                font-size: 3.2rem;
+                text-transform: capitalize;
+                color: var(--orange);
+                font-weight: 600;
+                letter-spacing: .1rem;
+                transition: all .5s ease;
+                margin: 0;
+            }
+
+            &:hover {
+                @include hoverOrange;
+            }
+        }
+
+        .navbar__right {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+
+            @include megasmall {
+                .navbar__search.active {
+                    width: 16rem !important;
+                }
+            }
+
+            .navbar__search {
+                border: 1px solid transparent;
+                height: 3.5rem;
+                position: relative;
+                width: 3.5rem;
+                overflow: hidden;
+                transition: all .5s ease;
+                border-radius: 5rem;
+                transition: all .5s ease;
+
+                &.active {
+                    width: 20rem;
+
+                    &:hover {
+                        .search {
+                            color: unset;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .search {
+                        color: var(--orange);
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    padding: .2rem;
+                    background: $white;
+                    z-index: 100;
+                    border: none;
+                    border-top-left-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                    width: 3.5rem;
+                    height: 3.5rem;
+
+                    .search {
+                        display: inline-block;
+                        transition: all .3s ease;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .input {
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    background: $white;
+
+                    input {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        height: 100%;
+                        width: 70%;
+                        margin-left: .5rem;
+                        border: none;
+                        outline: none;
+                        font-size: 1.5rem;
+                        padding: 1rem;
+                        font-weight: 500;
+                    }
+
+                    .clear {
+                        position: absolute;
+                        top: 50%;
+                        right: 1rem;
+                        transform: translateY(-50%);
+                        font-size: 1.3rem;
+                        cursor: pointer;
+                        color: $text;
+                        display: inline-block;
+                        transition: all .3s ease;
+                    }
+                }
+            }
+
+            .navbar__mode {
+                margin: 0 1rem;
+                position: relative;
+
+                .checkbox {
+                    position: absolute;
+                    opacity: 0;
+
+                    &:checked+.label .ball {
+                        transform: translateX(2.4rem);
+                        background: $bluetree;
+                    }
+                }
+
+                .label {
+                    box-sizing: border-box;
+                    // background: $bluetree;
+                    background: var(--background);
+                    height: 3rem;
+                    margin-bottom: 0;
+                    width: 5.2rem;
+                    border-radius: 5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: var(--orange);
+                    position: relative;
+
+                    .sun__mode {
+                        font-size: 1.6rem;
+                        margin: auto;
+                    }
+
+                    .moon__mode {
+                        margin: auto;
+                        font-size: 1.6rem;
+                    }
+
+                    .ball {
+                        position: absolute;
+                        height: 2.2rem;
+                        width: 2.2rem;
+                        background: $orange;
+                        border-radius: 50%;
+                        left: .3rem;
+                        transition: transform .5s ease;
+                    }
+                }
+            }
+
+            .navbar__menu {
+                .menu__button {
+                    padding: 0 .5rem;
+
+                    i {
+                        font-size: 3rem;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar__dropmenu {
+        position: absolute;
+        top: 75%;
+        padding: 0 0 0 3rem;
+
+        .dropmenu__container {
+            padding: 0 3rem;
+
+            .dropmenu__list {
+                float: right;
+                text-align: center;
+                width: 23rem;
+                border-radius: .5rem;
+                background: var(--background);
+
+                .nav__items {
+                    padding: .7rem;
+
+                    .nav-link {
+                        padding: 0;
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        color: var(--black);
+                        transition: all .3s ease;
+
+                        &.active {
+                            color: var(--orange);
+                        }
+
+                        &:hover {
+                            color: var(--orange);
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+    }
+}
