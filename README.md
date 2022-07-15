@@ -30,7 +30,6 @@ Completion level: 100%
 
 
 
-
 DANG THAO TRANG
 
 1 - Discorver
