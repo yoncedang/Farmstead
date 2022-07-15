@@ -7,7 +7,7 @@ DANG VAN HUY
 DANG THAO TRANG
 
 
-Division Work for each person:
+Division work for each person:
 
 DANG VAN HUY
 
