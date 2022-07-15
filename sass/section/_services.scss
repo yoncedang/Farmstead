@@ -1,0 +1,119 @@
+@import "./../responsive/responsive";
+@import "./../variables/variables";
+
+
+
+.services {
+    width: 100%;
+    height: auto;
+    background: $bluetree;
+
+    .services__container {
+        .services__details {
+            padding: 10rem 0;
+
+            .services__heading {
+                position: relative;
+                color: $white;
+                align-items: center;
+
+                .heading__left {
+                    h2 {
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+
+                    }
+
+                    h3 {
+                        font-size: 3.5rem;
+                        margin-bottom: 2rem;
+                        text-transform: capitalize;
+                        line-height: 4.5rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .heading__center {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    p {
+                        font-size: 12vw;
+                        text-transform: capitalize;
+                        font-weight: bold;
+                        opacity: .11;
+                        z-index: 0;
+                        color: $white;
+                    }
+                }
+
+                .heading__right {
+                    text-align: start;
+
+                    p {
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        color: $white;
+                    }
+                }
+            }
+
+            .services__items {
+                padding: 0;
+                margin-top: 4rem;
+
+                .services__list {
+
+                    // border: 2px solid transparent;
+                    .card__details {
+                        transition: all .5s ease;
+                        background: var(--background);
+                        border-radius: 2rem;
+                        overflow: hidden;
+                        border: 2px solid transparent;
+                        margin: 1rem 0;
+
+                        .card__header {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .card__footer {
+                            padding: 3rem 2rem;
+                            display: flex;
+                            flex-direction: column;
+
+                            h3 {
+                                background: rgb(0 159 77 / 16%);
+                                color: $bluetree;
+                                padding: .5rem 2rem;
+                                display: inline-block;
+                                border-radius: 5rem;
+                            }
+
+                            a {
+                                margin: 1.5rem 0;
+                                font-size: 2.4rem;
+                                line-height: 3rem;
+                                font-weight: 600;
+                                color: var(--black);
+                                text-transform: capitalize;
+                            }
+
+                            p {
+                                font-size: 1.7rem;
+                                line-height: 2.7rem;
+                                color: $text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
