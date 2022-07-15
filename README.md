@@ -1,11 +1,11 @@
 # Farmstead
 
+Github Pages: https://dvhuydev.github.io/Farmstead/
 Team:
 
 DANG VAN HUY
 
 DANG THAO TRANG
-
 
 Division work for each person:
 
