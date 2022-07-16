@@ -1,0 +1,31 @@
+@import "./../responsive/responsive";
+@import "./../variables/variables";
+
+
+.backtotop{
+    z-index: 100;
+    position: relative;
+    .backtotop__container{
+    
+        i{
+            position: fixed;
+            // float: right;
+            right: 3rem;
+            bottom: 3rem;
+            font-size: 4rem;
+            width: 5rem;
+            height: 5.5rem;
+            cursor: pointer;
+            color: var(--background);
+            background: $orange;
+            border-radius: 1.5rem;
+            line-height: 5.5rem;
+            text-align: center;
+            // opacity: 0.3;
+            // transition: all .3s ease;
+        }
+        // &:hover i{
+        //     opacity: 1;
+        // }
+    }
+}

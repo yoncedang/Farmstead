@@ -1343,6 +1343,49 @@
   --grayS: #0b0d0e;
 }
 
+.backtotop {
+  z-index: 100;
+  position: relative;
+}
+.backtotop .backtotop__container i {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  font-size: 4rem;
+  width: 5rem;
+  height: 5.5rem;
+  cursor: pointer;
+  color: var(--background);
+  background: #fb811e;
+  border-radius: 1.5rem;
+  line-height: 5.5rem;
+  text-align: center;
+}
+
+:root {
+  --orangeHover: #000;
+  --background: #fff;
+  --orange: #fb811e;
+  --black: #000;
+  --white: #fff;
+  --text: #707070;
+  --bluetree: #009f4d;
+  --social: rgba(224, 201, 69, 0.3);
+  --grayS: #f4f4f4;
+}
+
+.dark__mode {
+  --orangeHover: #fff;
+  --background: #222222;
+  --orange: #fb811e;
+  --black: #fff;
+  --white: #000;
+  --text: #707070;
+  --bluetree: #009f4d;
+  --social: rgba(224, 201, 69, 0.3);
+  --grayS: #0b0d0e;
+}
+
 * {
   margin: 0;
   padding: 0;
