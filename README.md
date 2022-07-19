@@ -2,6 +2,8 @@
 
 Github Pages: https://dvhuydev.github.io/Farmstead/
 
+Youtube Video: https://www.youtube.com/watch?v=t6Te3z0gzNg&t=166s&ab_channel=CodewithYonce
+
 
 Team:
 
